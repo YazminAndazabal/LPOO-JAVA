@@ -1,8 +1,8 @@
-//2.Escribir por consola los números de del 1 al 100 e informar si  el número es par, mostrar su valor.
-//3.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores.
-//4.Pedir números por pantalla hasta que alguno sea mayor a 100 y además sea un numero primo.
-//5.Realizar una calculadora con operaciones aritméticas simples (+, - , *, /).
-//6.Pensar y desarrollar un ejemplo donde se vea el uso del for-each y comentarlo pertinentemente.
+/*1.Escribir por consola los números de del 1 al 100 e informar si  el número es par, mostrar su valor*/
+/*2.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores*/3.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores*/3.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores*/3.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores*/
+/*3.Pedir números por pantalla hasta que alguno sea mayor a 100 y además sea un numero primo*/
+/*5.Realizar una calculadora con operaciones aritméticas simples (+, - , *, /)*/
+/*6.Pensar y desarrollar un ejemplo donde se vea el uso del for-each y comentarlo pertinentemente*/
 
 import java.util.Scanner;
 public class PrimerosEjercicios {
