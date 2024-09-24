@@ -1,0 +1,122 @@
+
+/*1.Escribir por consola los números de del 1 al 100 e informar si  el número es par, mostrar su valor*/
+/*2.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores*/3.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores*/3.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores*/3.Escribir por consola los números del 50 al 100 e informar si  el número es primo, sino escribir sus divisores*/
+/*3.Pedir números por pantalla hasta que alguno sea mayor a 100 y además sea un numero primo*/
+/*5.Realizar una calculadora con operaciones aritméticas simples (+, - , *, /)*/
+/*6.Pensar y desarrollar un ejemplo donde se vea el uso del for-each y comentarlo pertinentemente*/
+
+import java.util.Scanner;
+public class PrimerosEjercicios {
+	
+	public static boolean prim(int a){
+		for(int i=2;i<a/2;i++) {
+			if(a%i==0){
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public static void main(String args[]){
+		Scanner leer = new Scanner (System.in);
+		int opc;
+		System.out.println("Elegir opcion de 1 a 6 de ejercicios:");
+		opc = leer.nextInt();
+		switch(opc) {
+		case 1:{
+		int a=0;
+		do {
+		System.out.println("Ingrese un numero de 1 a 100");
+		a = leer.nextInt();
+		if (a>0 & a<101) {
+			break;
+		}
+		}while(true);
+		if(a%2==0) {
+			System.out.println(a+" es par");
+		}else {
+			System.out.println(a+" no es par");
+		}
+		}
+		case 2:{
+			int a;
+			do{
+				System.out.println("Escribir un numero entre 1 y 100 para decir si es par o no");
+				a=leer.nextInt();
+				if(a>=0 && a<=100){
+					if(a%2==0){
+						System.out.println(a+" es par");
+						break;
+					}else {
+						System.out.println("no es par");
+						break;
+					}
+				}else {
+					System.out.println("numero invalido");
+				}
+			}while(true);
+		}
+		case 3:{
+			int a;
+			do{
+				System.out.println("Escribir un numero entre 50 y 100 para decir si es primo o no");
+				a=leer.nextInt();
+				if(a>=50 && a<=100){
+					for(int i=2;i<a/2;i++) {
+						if(a%i==0){
+							System.out.println(a+" no es primo");
+							return;
+						}
+					}
+						System.out.println(a+" es primo");
+						break;
+				}else {
+					System.out.println("numero invalido");
+				}
+			}while(true);
+		}
+		case 4:{
+			int a;
+			while(true) {
+			System.out.println("Escribir un numero, el programa terminara cuando sea mayor a 100 y primo");
+			a=leer.nextInt();
+			if (a>100 & prim(a)==true) {
+				System.out.println(a +"es mayor a 100 y primo");
+				break;
+			}
+			}
+
+		}
+		case 5:{
+			int a,b,resultado;
+			char c;
+			System.out.println("ingresar primer numero");
+			a = leer.nextInt();
+			System.out.println("ingresar operacion");
+			c = leer.next().charAt(0);
+			System.out.println("ingresar segundo numero");
+			b = leer.nextInt();
+			if(c=='+') {
+				System.out.println((a+b));
+			}else if(c=='-') {
+				System.out.println((a-b));
+			}else if(c=='*') {
+				System.out.println((a*b));
+			}else if(c=='/') {
+				System.out.println((a/b));
+			}else { System.out.println("RESPUESTA INVALIDA"); }
+		}
+		case 6:{
+			String a[]={"hola","como","estas"};
+			//el for each es una forma de recorrer un array sin necesidad 
+			//de utilizar el bucle tradicional
+			for(String palabra:a){
+	//se muestra como "palabra" en este bucle
+				System.out.println(palabra+" ");
+			}
+		}
+		}
+		leer.close();
+	}
+	
+}
