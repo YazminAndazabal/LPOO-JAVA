@@ -1,4 +1,5 @@
 package yaz;
+/*Del siguiente String «La lluvia en Sevilla es una maravilla» cuenta cuantas vocales hay en total (recorre el String con charAt).*/
 public class yaz22 {
 	public static void main(String[] args) {
 		  String ea= "La lluvia en Sevilla es una maravilla";
