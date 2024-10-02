@@ -5,3 +5,5 @@ public class yaz23 {
 		  String ea= "la lluvia en sevilla es una maravilla";
 		  ea =ea.replaceAll("a","e");
 		  System.out.println(ea);
+	}
+}
